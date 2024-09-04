@@ -1,0 +1,27 @@
+1. Basics of Programming
+
+ii) Variables:
+
+                2*(a+b)
+      Here,
+      2 -> literal => whose values are universal (constannt values which can be changed)
+      a,b -> variables => those values which can be changed
+      
+eg:
+a,b,c, JavaBasics, main, print => names of variables or functions => called identifiers 
+
+
+IDENTIFIERS - These are names given to functions or variables
+
+1,2,3,..  'a','b','c',...  '@','*' => these are universal values called literals (constants, character literals)
+
+
+WHAT HAPPENS IN MEMORY? WHEN A VARIABLE IS CREATED
+
+int a = 10;
+int b = 5;
+String name = "Tony";
+
+Inside the memory, block of size same as the datatype is created. Each block gets the name of the variable and an address. Address of each block may or may not be contigious.
+
+iii) Datatypes
