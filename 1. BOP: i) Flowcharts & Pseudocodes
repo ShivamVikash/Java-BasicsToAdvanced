@@ -1,0 +1,152 @@
+1. Basics of Programming
+
+i) Flowcharts - Diagram to represent solutions of a problem.
+ii) Pseudocode - A step-by-step description of an algorithm or approach to solve a problem, written in a simplified, language-agnostic version of code.
+
+Examples of Pseudocode:
+
+I. Sum of 2 numbers
+
+1. Start
+2. Input two numbers a & b
+3. Calculate sum = a+b
+4. Print sum
+5. Exit
+
+II. Calculate simple interest
+
+1. Start
+2. Input p, r, t
+3. Calculate si=(p*r*t)/100
+4. Print si
+5. Exit
+
+III. Find the max of three numbers
+
+1. Start
+2. Input three numbers a, b & c
+3. if a>b
+4.   if a>c
+5.      print a
+6.   else
+7.      print c
+8. else
+9.   if b>c
+10.    print b
+11.  else
+12.    print c
+13. Exit
+
+IV. Find if number is prime
+
+1. Start
+2. Input number n
+3. let div =2
+4. while div<n
+5.   if n%div==0
+6.     print NOT PRIME
+7.     Exit
+8.   else
+9.     div++
+10. print PRIME
+11. Exit
+
+V. Sum of first n natural numbers
+
+1. Start
+2. Intput n
+3. let f=1, sum =0
+4. while f<=n
+5.    sum+=f
+6.    f++
+7. print sum
+8. Exit
+
+VI. Area of Circle
+
+1. Start
+2. Input r
+3. Calculate area = 3.14*r*r
+4. Print area
+5. Exit
+
+VII. Greatest of 2 numbers
+
+1. Start
+2. Input numbers a & b
+3. if a>b
+4.   print a
+5. else
+6.   print b
+7. Exit
+
+VIII. Even numbers between 9 and 100
+
+1. Start
+2. Let v =10
+3. while v<=100
+4.   if(v%2==0)
+5.      print v
+6.   v++
+7. Exit
+
+IX. Average of 25 scores
+
+Approach 1:
+
+1. Start
+2. Input s1,s2,s3,s4,s5,s6,....,s24,s25
+3. Calculate sum = s1+s2+s3+....+s24+s25
+4. Calculate avg = sum/25
+5. Print avg
+6. Exit
+
+Approach 2:
+
+1. Start
+2. Input c=1, sum =0
+3. while c<=25
+4.    Input score
+5.    sum+= score
+6.    c++
+7. Calculate avg = sum/25
+8. Print avg
+9. Exit
+
+X. All roots of a quadratic equation ax^2+bx+c
+
+/* -----Theory-----
+
+quadratic equation: ax^2+bx+c
+discriminant of quad eqn: D = b^2 - 4ac
+if, 
+D>0    root1 = (-b + D^1/2)/2a
+       root2 = (-b - D^1/2)/2a
+
+D=0    root1 = root2 = -b/2a
+
+D<0    root1 = -b/2a + (i(-D)^1/2)/2a
+       root2 = -b/2a - (i(-D)^1/2)/2a
+
+   -----------------
+*/
+
+1. Start
+2. Input a,b,c
+3. Let r1, r2, r3, r4, r5, r6
+4. Let d = b^2-4*a*c
+5. if d > 0
+6.   r1=(-b+d^1/2)/2*a
+7.   r2=(-b-d^1/2)/2*a
+8.   print r1, r2
+9.   Exit
+10. else if d==0
+11.  r3 = -b/2*a
+12.  r4 = -b/2*a
+13.  print r3, r4
+14.  Exit
+15. else
+16.  r5 = -b/2*a + (i(-d)^1/2)/2*a
+17.  r6 = -b/2*a - (i(-d)^1/2)/2*a
+18.  print r5, r6
+19.  Exit
