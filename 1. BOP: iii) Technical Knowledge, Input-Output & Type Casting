@@ -1,0 +1,140 @@
+iii) Technical Knowledge
+
+- Saving a java file: extension-> .java
+- class -> all codes are written within a class
+- file name & class name -> same
+- main() function is the first things that gets executed by the compiler when a program runs.
+- Java is a strict language -> so is more secure.
+- Java is a portable language -> can run on any machine (C++ is not a portable language) 
+
+- Boilerplate code:
+
+class JavaBasics{
+   public static void main(String args[]){
+
+   }
+}
+
+- COMPILE & RUN
+
+-> Change directory to where the folder is saved
+eg: cd Desktop
+    cd Java Programs
+    
+-> Calling java compiler :  javac javaBasics.java
+-> Running the code :       java JavaBasics.java
+
+HOW DOES JAVA CODE RUN:
+
+Source code -> Compiler -> Byte Code -> JVM -> Native Code
+  (.java)                   (.class)   
+<-------- Compilation --------><----- Execution ----->  
+(Native code is different for different machines. eg: MAC, Windows, Linux)  
+
+JDK (+ Development Tools( JRE ( + libraries (JVM))))
+Here, 
+JVM - Java Virtual Machine
+JRE - Java Runtime Environment (module)
+JDK - Java Development Kit
+
+
+
+iv) Comments: They are non-executable statements which are ignored by the compiler during the execution of the program.
+//     -> used for single line comment
+/*  */ -> used for multi-line comment
+
+
+
+v) Input/Output in Java
+
+INPUT: 
+
+import java.io.*;   -> import the packages used for input & output in a program.
+import java.util.*; -> import all the packages and multile classes.
+
+Scanner sc = new Scanner(System.in);
+Here,
+sc -> object of the class Scanner
+System.in: in -> in specifies input
+
+String sc = sc.next();
+Here,
+sc -> object captures input with the help of function next().
+
+sc.next()     -> Takes first string before whitespace
+sc.nextLine() -> Takes entire line
+
+OUTPUT:
+
+i)   print   - Cursor remains in the same line after printing the statement.
+ii)  println - Cursor moves to the next line after printing the statement.
+iii) "\n"    - The expression written after this moves to the next line.
+
+Syntax:
+
+System.out.print("This is an output");
+Here,
+print -> is a function
+This is an output -> is the output expression
+; -> statement terminator
+
+
+
+vi) Type Conversion & Type Casting
+
+In java, any decimal value by default is considered to be double.
+eg:
+ float A = 3.14*r*r;  //Error
+ Here, 3.14 -> double
+       r -> float
+
+ float A = 3.14f*r*r;  //Correct; We place 'f' after no. to make it float
+
+TYPE CONVERSION:
+
+- Conversion happens when: 
+a) type compatible                            // int -> float (possible)   ;  int -> boolean (not possible)
+b) destination type > source type
+    byte -> short -> int -> float -> long -> double    (WIDENING/IMPLICIT CONVERSION: possible) (reverse is not possible)
+    [implicit: on its own; data from smaller datatype is assigned to larger compatible datatype]
+
+eg:
+int -> long (good to go)       long -> int (X - lossy conversion: data loss may happen)
+
+TYPE CASTING: (Also called NARROWING/EXPLICIT conversion) Conversion that java does not allow but we do it forcefully.
+[Explicit: forcefully]
+eg:
+i)  float a = 25.0f;
+    int b = a;        //Error
+    int b = (int)a;   //Correct
+
+ii) char ch = 'a';
+    int n = ch;
+    System.out.println(n);  //Output: 97
+
+
+v) Type Promotion in Expressions
+
+- Java automatically promotes each byte, short or char operand to its int when evaluating an expression.
+- If one operand is long, float or double the whole expression is promoted to long, float or double respectively. [to the largest possible datatype].
+eg:
+i)  char a = 'a';
+    char b = 'b';
+    System.out.println(a-b); //Output: 1
+
+ii) char a = 'a';
+    char b = 'b';
+    char c = a-b;  //Error: int cannot be converted to char
+Here, a-b -> int
+      c   -> char
+
+iii) short n1 = 50;    
+     char c = 'a';
+     // c -> int  ,   n1 -> int
+     // c + n1 -> int (97+50=147)
+
+iv) a+b*c/d     // a -> int, b -> float, c -> long, d -> double   [Overall expression -> double
+
+v) byte b = 5;
+   byte a = b*2; //Error [Expression: b*2 -> int. So, int -> byte (not possible). Even if, byte -> [range: -127 to 127 & 10 lies in the range]
+   byte a = (byte)b*2; //Correct
