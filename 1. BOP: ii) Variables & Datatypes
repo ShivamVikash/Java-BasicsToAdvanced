@@ -24,4 +24,30 @@ String name = "Tony";
 
 Inside the memory, block of size same as the datatype is created. Each block gets the name of the variable and an address. Address of each block may or may not be contigious.
 
-iii) Datatypes
+iii) Datatypes - are used to specify the type of data that is going to be stored in the variable.
+
+Java -  is a typed language, the variable type needs to be specified before storing the data.
+(Java, Python, C++ are tyed languages. JavaScript is not a typed language).
+
+Datatypes - 2 types
+
+1. Primitive: Already exists 
+i)    byte - 1 byte     [256: -127 to 127]
+ii)   short - 2 bytes
+iii)  int - 4 bytes     [-2 billion to +2 billion]
+iv)   long - 8 bytes
+v)    float - 4 bytes
+vi)   double - 8 bytes
+vii)  char - 2 bytes    [small letters, capitial letters, special symbols: 'a'-'z','A'-'Z','@','$',...]
+viii) boolean - 1 byte  [true,false / 0,1]
+
+2. Non-Primitive: Needs to be created by the user
+i) String
+ii) Array
+iii) Class
+iv) Object
+v) Interface
+
+SYNTAX:
+
+datatype variablename = value;
