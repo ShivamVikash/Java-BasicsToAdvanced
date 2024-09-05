@@ -1,0 +1,60 @@
+iv) Operators: They are symbols that tell compiler to perform certain operations.
+eg:
+   Expression:   sum = a + b
+   a,b -> operands
+   +   -> operator
+
+5 TYPES OF OPERATORS:
+
+i) Arithematic operator (Binary/Unary/Ternary)
+
+Binary (2 operands) -> +, -, *, /, %
+Unary  (1 operand)  -> ++, --
+
+               Increment operator(++)                    
+Pre-increment  (++a)                  Post-increment (a++)    
+- First increment the value      - First use the value
+- Then use                       - Then increment
+
+               Decrement Operator(--)
+Pre-decrement (--a)                   Post-decrement (a--)               
+- First decrement the value      - First use the value
+- Then use                       - Then decrement
+
+eg: a=10;                             a=10;
+    ++a;                              b= a++;
+    print (a);  //Output: 11          print (a);  //Output: 11    
+                                      print (b);  //Output: 10   (first use, then increment the value)
+
+Ternary (3 operands)
+
+Syntax:
+variable = (condition) ? expression1 : expression2;                                      
+eg: a=(a>5)?10:20;
+
+ii) Relational Operator
+
+==    (checks equality)           // Assignment operator (assigns / stores values) ->  ' = '  
+!=    (checks inequality)
+>
+<
+>=
+<=
+
+iii) Logical Operator
+
+&& -> logical AND   => if both statements T, then T
+|| -> logical OR    => if both statements F, then F
+!  -> Logical NOT   => if T, then F; if F, then T
+
+iv) Assignment Operators
+
+=     // A=B; Value of B gets stored in A
++=    // A+=B <=> A=A+B
+-=    // A-=B <=> A=A-B
+*=
+/=
+%=    // A%=5 <=> A=A%5
+
+
+Operator Precedence: determines the order in which operators in an expressions are being executed.
