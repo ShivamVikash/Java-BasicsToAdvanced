@@ -13,6 +13,10 @@ a,b,c, JavaBasics, main, print => names of variables or functions => called iden
 
 IDENTIFIERS - These are names given to functions or variables
 
+Identifier Rules:
+-Identifiers can start with any alphabets, or underscore(_) or dollar($).
+eg: int $ = 24; //Correct
+
 1,2,3,..  'a','b','c',...  '@','*' => these are universal values called literals (constants, character literals)
 
 
