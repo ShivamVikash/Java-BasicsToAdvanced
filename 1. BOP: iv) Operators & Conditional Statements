@@ -170,4 +170,31 @@ variable = condition ? stat1 : stat2 ;
 eg:
 a = (5>3) ? 5 : 3;  //Output: 5
 
-v. Switch statement
+v. Switch statement: Statements inside each case is executed when the switch condition matches.
+
+Syntax:
+
+switch(variable){
+  case 1: 
+         break;
+  case 2:
+         break;
+  default:
+}
+
+Note:
+- Once a case matches, all the cases after that also starts executing, so we use break keyword.
+- Cases can also be in random order.
+- Cases are not necessary numbers, it can be floating, char or any value.
+
+eg: 
+int n=2;
+switch(n){
+  case 1: System.out.println(" n is equal to 1");
+          break;
+  case 2: System.out.println(" n is equal to 2");
+          break;
+  case 3: System.out.println(" n is equal to 3");
+          break;
+  default: System.out.println(" n is greater than 3");
+}
