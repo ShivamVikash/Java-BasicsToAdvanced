@@ -29,8 +29,16 @@ eg: a=10;                             a=10;
 Ternary (3 operands)
 
 Syntax:
-variable = (condition) ? expression1 : expression2;                                      
-eg: a=(a>5)?10:20;
+variable = (condition) ? statement 1 : statement 2;
+// Variable stores the result, if the condition is true: statement 1 is executed; else: statement 2 is executed.
+
+eg: int larger = (10>5) ? 10:5; 
+    print(larger);  //Output: 10
+
+    int marks = 97;
+    String status = (marks>=33)? "PASS":"FAIL";
+    print(status);  //Output: PASS
+    
 
 ii) Relational Operator
 
@@ -58,3 +66,108 @@ iv) Assignment Operators
 
 
 Operator Precedence: determines the order in which operators in an expressions are being executed.
+
+OPERATORS                   PRECEDENCE                   ASSOCIATIVITY
+
+postfix                     ++  --                       left to right
+prefix, unary               ++  --  +  -  ~  !           right to left
+multiplicative              *  /  %                      left to right
+additive                    +  -                         left to right
+shift                       <<  >>  >>>                  left to right
+relational                  <  >  <=  >= instance of     left to right
+equality                    == !=                        left to right
+bitwise AND                 &                            left to right
+bitwise exclusive OR        ^                            left to right
+bitwise inclusive OR        |                            left to right
+logical AND                 &&                           left to right
+logical OR                  ||                           left to right
+ternary                     ?:                           right to left
+assignment                  =,+=,-=,*=,/=,%=,&=,^=,|=,   right to left
+                            <<=,>>=,>>>=
+
+Associativity of operators: If an expression has two or more operators with similar precedence, the expression is evaluated to its associativity (either form left to right, or right to left).
+
+
+v) Conditional Statements
+
+i. if statements: statements inside the if block is executed only when the if condition is true
+
+Syntax:
+if(condition){
+
+}
+
+- There can be multiple if statements used in a program.
+
+ii. if-else statements: statements inside the if block gets executed only when the if condition is true, otherwise statements inside the else block gets executed.
+
+Syntax:
+if(condition){
+
+}
+else{
+
+}
+
+- For if statements and if-else statements, if there is only one statement inside the block, then {} can be skipped.
+eg:  
+if(A>B)
+  System.out.println(" A is largest");
+
+iii. else if statements: statements inside the if block is executed, when the if condition is true. If not, then statement inside the else if condition is checked, is it is true, then statements inside that else if block is executed. Otherwise the statements inside the else block is executed.
+
+Syntax:
+if(condition1){
+
+}
+else if(condition2){     // Not checked when the if condition is true; Saves Computation time
+
+}
+else{
+
+}
+
+Q-> Why we use else if blocks rather than using multiple if blocks?
+Ans Else if statements are not checked when the if statement is true or the previous else if statement is true. This saves computation time. Moreover, in case of multiple if statements, all the if conditions will be checked, regardless of conditions being true or false.
+
+Q-> Print largest of 3 numbers using conditional statements
+Ans
+
+Approach 1  // more optimized
+
+if((A>=B)&&(A>=C)){
+   print(A);
+}
+else if(B>C){
+   print(B);
+}
+else{
+   print C;
+}
+
+Approach 2
+
+if(A>B){
+  if(A>C){
+     print(A);
+  }
+  else{
+     print(C);
+  }
+else{
+  if(B>C){
+     print(B);
+  }
+  else{
+     print(C);
+  }
+}
+
+iv. Ternary Operator:   //a kind of if else condition 
+
+variable = condition ? stat1 : stat2 ;  
+
+eg:
+a = (5>3) ? 5 : 3;  //Output: 5
+
+v. Switch statement
