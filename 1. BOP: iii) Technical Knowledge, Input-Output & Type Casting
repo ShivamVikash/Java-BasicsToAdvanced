@@ -6,6 +6,8 @@ iii) Technical Knowledge
 - main() function is the first things that gets executed by the compiler when a program runs.
 - Java is a strict language -> so is more secure.
 - Java is a portable language -> can run on any machine (C++ is not a portable language) 
+- In Java:  ; -> statement ends at the terminator (doesn't matter multiple statements in the same line or not).
+- In Java, no ',' between digits of a number. //5,00,000 (incorrect), 500000 (correct).
 
 - Boilerplate code:
 
