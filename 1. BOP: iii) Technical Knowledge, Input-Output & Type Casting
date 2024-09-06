@@ -39,7 +39,8 @@ JVM - Java Virtual Machine
 JRE - Java Runtime Environment (module)
 JDK - Java Development Kit
 
-
+- For taking input a single character from user:
+char ch = sc.next().charAt(0);
 
 iv) Comments: They are non-executable statements which are ignored by the compiler during the execution of the program.
 //     -> used for single line comment
