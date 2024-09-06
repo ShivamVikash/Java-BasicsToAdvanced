@@ -1,0 +1,42 @@
+Loops (Flow Control):
+- while loop
+- do while loop
+- for loop
+
+i. while loop: First checks the condition and then executes
+
+Syntax:
+while(condition){
+
+}
+
+eg: 
+int n;
+int i=1; int sum =0;
+while(i<=5){
+  sum+=i;
+  i++;
+}  
+
+ii. do while loop: First execute then check the condition
+
+Syntax:
+do{
+
+} while(condition);
+
+eg:
+int i=10;
+do{
+    print("H");
+    i++;
+}while(i<=5);
+ 
+           WHILE LOOP                         VS                              DO WHILE LOOP
+- check the condition, then execute                      - execute then check the condition (for first time only)
+- eg:                                                    - eg:
+int i=10;                                                  int i=10;
+while(i<=5){                                               do{
+  print(i);                                                     print(i);                                                           i++;
+}                                                           }while(i<5);
+//Output:                                                   //Output: 10   
